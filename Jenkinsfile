@@ -1,5 +1,9 @@
 pipeline {
-agent any
+	agent {
+		label{
+		label "dev"	
+		}
+	}
 
                    stages{
 			 stage('git_checkout'){
